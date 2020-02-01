@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000
 const standings_service = require('./service/standings');
 
 app.get('/', async (req, res) => {
-    let response = await standings_service.findStandings("149", "Leeds", "41", "England");
+    let response = await standings_service.findStanding("149", "Leeds", "41", "England");
     console.log(response)
     res.send(response)
 })
