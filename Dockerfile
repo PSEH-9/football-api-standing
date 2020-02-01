@@ -1,7 +1,7 @@
-FROM node:12-slim
+FROM node:12-alpine
 
-COPY ./ /home/src/
-WORKDIR /home/src/
+COPY ./ ~/
+WORKDIR ~/
 
 RUN npm install
 

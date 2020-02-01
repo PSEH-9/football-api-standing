@@ -4,15 +4,19 @@
   "description": "football api standings API",
   "main": "index.js",
   "scripts": {
+    "debug": "nodemon index",
     "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha './test/**/*.test.js'"
   },
   "author": "Manish Wadhwani",
   "license": "MIT",
   "dependencies": {
+    "assert": "^2.0.0",
     "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
     "config": "^3.2.3",
     "express": "^4.17.1",
+    "mocha": "^7.0.1",
     "nodemon": "^1.19.4",
     "request": "^2.88.0"
   }
